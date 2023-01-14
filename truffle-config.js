@@ -72,6 +72,7 @@ module.exports = {
       host: "127.0.0.1", // Localhost (default: none)
       port: 8545, // Standard Ethereum port (default: none)
       network_id: "*", // Any network (default: none)
+      websockets: true,
     },
 
     testnet: {
@@ -83,7 +84,7 @@ module.exports = {
       network_id: 97,
       skipDryRun: true,
     },
-    
+
     bsc: {
       provider: () =>
         new HDWalletProvider(mnemonic, `https://bsc-dataseed1.binance.org`),
